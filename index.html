@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Numm</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
 
-    <style>
-        
-    </style>
-  </head>
-  <body>
-    <header style="background-color: red;">
-        <h1 class="test">Testando</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Numm</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+  <style>
+
+    *, html, body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      padding: 8px;
+    }
+
+    .header {
+      background-color: #c2c2c2;
+      display: flex;
+      align-items: center;
+    }
+
+    .header__logo {
+      width: 88px;
+      height: auto;
+    }
+
+    .header__link {
+      margin-left: 48px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <header class="header">
+      <img src="./static/logo-white.png" alt="Page Logo" class="header__logo" />
+      <a href="#" class="header__link">Features</a>
+      <a href="#" class="header__link">Screenshots</a>
+      <a href="#" class="header__link">Testimonials</a>
+      <a href="#" class="header__link">Pricing</a>
     </header>
-	<script src="index.js"></script>
-  </body>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
