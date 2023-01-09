@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Numm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="style.css"> -->
 
   <style>
@@ -19,14 +20,18 @@
     .hero {
       width: 100vw;
       height: 100vh;
-      background-color: black;
+      background-color: #F2F9FF;
       padding: 8px;
+      background-image: url("static/background-only.png");
+      background-size: cover;
+      background-position: 0 -300px;
+      background-repeat: no-repeat;
     }
 
     .header {
-      background-color: #c2c2c2;
       display: flex;
       align-items: center;
+      margin: 56px 48px;
     }
 
     .header__logo {
@@ -35,7 +40,12 @@
     }
 
     .header__link {
-      margin-left: 48px;
+      margin-left: 32px;
+      font-family: 'Proza Libre', sans-serif;
+      color: #FEFEFE;
+      font-weight: 400;
+      font-size: 18px;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -50,6 +60,7 @@
       <a href="#" class="header__link">Pricing</a>
     </header>
   </div>
+  
   <script src="index.js"></script>
 </body>
 
