@@ -15,6 +15,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: 'Proza Libre', sans-serif;
     }
 
     .hero {
@@ -41,11 +42,35 @@
 
     .header__link {
       margin-left: 32px;
-      font-family: 'Proza Libre', sans-serif;
       color: #FEFEFE;
       font-weight: 400;
       font-size: 18px;
       text-decoration: none;
+    }
+
+    .hero-content {
+      display: block;
+      margin-left: 10%;
+    }
+
+    .hero-content__heading {
+      color: white;
+      font-size: 56px;
+      margin-bottom: 24px;
+    }
+
+    .hero-content__description {
+      color: #AFC0FF;
+      font-size: 24px;
+    }
+
+    .hero-content__button-container {
+      background-color: red;
+      display: inline-flex;
+    }
+
+    .hero-content__video-button {
+
     }
   </style>
 </head>
@@ -54,11 +79,21 @@
   <div class="hero">
     <header class="header">
       <img src="./static/logo-white.png" alt="Page Logo" class="header__logo" />
-      <a href="#" class="header__link">Features</a>
-      <a href="#" class="header__link">Screenshots</a>
-      <a href="#" class="header__link">Testimonials</a>
-      <a href="#" class="header__link">Pricing</a>
+      <nav>
+        <a href="#" class="header__link">Features</a>
+        <a href="#" class="header__link">Screenshots</a>
+        <a href="#" class="header__link">Testimonials</a>
+        <a href="#" class="header__link">Pricing</a>
+      </nav>
     </header>
+    <section class="hero-content">
+      <h1 class="hero-content__heading">Take charge of your finances</h1>
+      <h4 class="hero-content__description">Getting out of debt and saving more money has never been this easy.</h4>
+      <div class="hero-content__button-container">
+        <button class="download-button">Download Free</button>
+        <button class="hero-content__video-button">Download Free</button>
+      </div>
+    </section>
   </div>
   
   <script src="index.js"></script>
